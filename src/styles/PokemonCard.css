@@ -1,0 +1,153 @@
+.pokemon-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pokemon-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.03);
+  z-index: 0;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-id {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.pokemon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  z-index: 1;
+  position: relative;
+}
+
+.pokemon-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover .pokemon-image img {
+  transform: scale(1.1);
+}
+
+.pokemon-name {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+}
+
+.pokemon-types {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  position: relative;
+}
+
+.type-badge {
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.normal-card { background-color: #FFFADE; }
+.fire-card { background-color: #FFF1ED; }
+.water-card { background-color: #EDF7FF; }
+.grass-card { background-color: #F1FDEE; }
+.electric-card { background-color: #FFFAE6; }
+.ice-card { background-color: #F1FFFF; }
+.fighting-card { background-color: #FFEEED; }
+.poison-card { background-color: #FCF1FF; }
+.ground-card { background-color: #FFF7E8; }
+.flying-card { background-color: #F5F5FF; }
+.psychic-card { background-color: #FFEEF5; }
+.bug-card { background-color: #F8FFE6; }
+.rock-card { background-color: #F7F5E8; }
+.ghost-card { background-color: #F5EEFF; }
+.dragon-card { background-color: #F1EFFF; }
+.dark-card { background-color: #EFEFEF; }
+.steel-card { background-color: #F5F5F7; }
+.fairy-card { background-color: #FFF1F8; }
+
+.type-normal { background-color: #A8A878; }
+.type-fire { background-color: #F08030; }
+.type-water { background-color: #6890F0; }
+.type-grass { background-color: #78C850; }
+.type-electric { background-color: #F8D030; }
+.type-ice { background-color: #98D8D8; }
+.type-fighting { background-color: #C03028; }
+.type-poison { background-color: #A040A0; }
+.type-ground { background-color: #E0C068; }
+.type-flying { background-color: #A890F0; }
+.type-psychic { background-color: #F85888; }
+.type-bug { background-color: #A8B820; }
+.type-rock { background-color: #B8A038; }
+.type-ghost { background-color: #705898; }
+.type-dragon { background-color: #7038F8; }
+.type-dark { background-color: #705848; }
+.type-steel { background-color: #B8B8D0; }
+.type-fairy { background-color: #EE99AC; } 
